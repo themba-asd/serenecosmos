@@ -7,7 +7,7 @@ body {
     flex-direction: column;
     height: 100svh;
     background-color: #bbe1c3;
-    font-size: 1.25rem;
+    font-size: 1.1rem;
 }
 .container {
     max-width: 50em;
