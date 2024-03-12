@@ -9,7 +9,7 @@ const fetchQuotes = async () => {
     document.querySelector("button").style.display = "";
     document.querySelector("button").textContent = "Reload";
   }
-}
+};
 
 const setImageSrc = async () => {
   listOfSrc = [
@@ -21,7 +21,7 @@ const setImageSrc = async () => {
   imageEl = document.querySelector("#image");
   randomSrc = listOfSrc[Math.floor(Math.random() * listOfSrc.length)];
   imageEl.src = await randomSrc;
-}
+};
 
 const setDocumentContent = (data) => {
   document.querySelector("#author").textContent = "author: " + data.author;
@@ -29,7 +29,7 @@ const setDocumentContent = (data) => {
   document.querySelector("button").textContent = "Discover";
   document.querySelector("#loader").style.display = "none";
   document.querySelector("button").style.display = "";
-}
+};
 
 document.addEventListener("DOMContentLoaded", () => {setImageSrc();fetchQuotes();});
 document.querySelector("#discover").addEventListener("click", ()=> {fetchQuotes(); setImageSrc()});
