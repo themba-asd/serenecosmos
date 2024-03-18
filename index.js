@@ -24,7 +24,7 @@ const setImageSrc = async () => {
 };
 
 const setDocumentContent = (data) => {
-  document.querySelector("#author").textContent = "author: " + data.author;
+  document.querySelector("#author").textContent = "Author: " + data.author;
   document.querySelector("#quote").textContent = data.quote;
   document.querySelector("button").textContent = "Discover";
   document.querySelector("#loader").style.display = "none";
